@@ -38,8 +38,8 @@
      1) File Processing is multithreaded process.
      2) Multithreading is achieved by Executor framework FixedThreadPool.
      3) Thread pool and batch size configuration is present in application.properties.
-     4) thread.count- maximum threads configuration in thread pool.
-        batch.size- feeds(number of records) to each thread.
+     4) thread.count - maximum threads configuration in thread pool.
+        batch.size - feeds(number of records) to each thread.
      5) Threads process records in parallel and save/update in a database. Duration and Alert value is also calculated.
 
 # processMap
@@ -49,7 +49,7 @@
        When thread finishes his work on that record, acquired lock has been released by removing entry from process map.
      
 # Exception Handling
-    FileProcessingException- Custom Exception created to show readable messages for file processing errors.
+    FileProcessingException - Custom Exception created to show readable messages for file processing errors.
   
 # Test Cases
     1) Test cases are present in test folder.
