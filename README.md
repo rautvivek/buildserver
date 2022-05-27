@@ -46,7 +46,7 @@
     1) processMap is concurrentHashMap. This map is top level of all threads and shared between all.
     2) To maintain synchronization of one id between all threads, processMap is used.
     3) When thread starts processing any record, it acquires lock on that record by making entry in process map.
-       When thread finishes his work on that record, acquired lock has been released by removing entry from process map.
+       Once he finishes his work on that record, acquired lock has been released by removing entry from process map.
      
 # Exception Handling
     FileProcessingException - Custom Exception created to show readable messages for file processing errors.
